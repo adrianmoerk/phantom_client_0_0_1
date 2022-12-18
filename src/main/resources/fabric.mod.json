@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "phantom_client",
+  "version": "${version}",
+  "name": "PhantomClient",
+  "description": "Small Utility Mod ",
+  "authors": [
+    "Adrian_Moerk"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/phantom_client/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.phantom_client.client.PhantomClient"
+    ],
+    "main": [
+      "net.phantom_client.Phantom_client"
+    ]
+  },
+  "mixins": [
+    "phantom_client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
